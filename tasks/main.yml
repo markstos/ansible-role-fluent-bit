@@ -5,10 +5,10 @@
 
 - name: Install fluentbit package
   package:
-    name: td-agent-bit
+    name: fluent-bit
     state: present
     update_cache: true
-  notify: Restart fluentbit service
+  notify: Restart fluent-bit service
   tags: ['install']
 
 - import_tasks: configure.yml
